@@ -38,6 +38,7 @@ function App() {
         data={data}
         pagePosition={pagePosition}
         setPagePosition={setPagePosition}
+        initData={initData}
       />
     </>
   );

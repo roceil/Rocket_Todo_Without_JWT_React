@@ -2,7 +2,7 @@ import PageTab from "../component/PageTab";
 import ListItem from "../component/ListItem";
 import ListFooter from "../component/ListFooter.jsx";
 
-function ListGroup({ data,setInitData,pagePosition,setPagePosition }) {
+function ListGroup({ data,setInitData,pagePosition,setPagePosition ,initData}) {
   return (
     <div className="mt-4 container ">
       <div className="shadow_list rounded-[10px] bg-white">
@@ -15,7 +15,7 @@ function ListGroup({ data,setInitData,pagePosition,setPagePosition }) {
             );
           })}
         </ul>
-        <ListFooter data={data} setInitData={setInitData}/>
+        <ListFooter initData={initData} setInitData={setInitData}/>
       </div>
     </div>
   );

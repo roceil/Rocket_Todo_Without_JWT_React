@@ -1,8 +1,8 @@
-function ListFooter({ data,setInitData }) {
-  const unFinishLength = data.filter(item => {
+function ListFooter({ initData,setInitData }) {
+  const unFinishLength = initData.filter(item => {
     return item.finish === false
   })
-  const finishedItem = data.filter(item=>{
+  const finishedItem = initData.filter(item=>{
     return item.finish === false
   })
   function clearAllFinishBtn() {
