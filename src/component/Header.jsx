@@ -1,5 +1,5 @@
 import header_logo from "../img/header_logo.svg"
-function Header({ setData }) {
+function Header() {
  return (
   <div className="pt-4 px-[34px] flex justify-between">
     <img src={header_logo} alt="logo" />
