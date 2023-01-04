@@ -1,10 +1,10 @@
 import { useState } from "react";
 import AddItems_btn from "../img/addItems_btn.svg";
 import uuid from "react-uuid";
-function AddTodo({ setData }) {
+function AddTodo({ setInitData }) {
   const [todoItem, setTodoItem] = useState(``);
   function addItem() {
-    setData((prev) => {
+    setInitData((prev) => {
       return [{ content: todoItem, finish: false, id: uuid() }, ...prev];
     });
     setTodoItem(``)
@@ -14,7 +14,7 @@ function AddTodo({ setData }) {
   }
   function enterPress(e) {
     if (e.key === "Enter") {
-      setData((prev) => {
+      setInitData((prev) => {
         return [{ content: todoItem, finish: false, id: uuid() }, ...prev];
       });
       setTodoItem(``)

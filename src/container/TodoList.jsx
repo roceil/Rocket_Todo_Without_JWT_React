@@ -1,10 +1,10 @@
 import AddTodo from "../component/AddTodo";
 import ListGroup from "../container/ListGroup";
-function TodoList({ setData,data,pagePosition,setPagePosition }) {
+function TodoList({ setInitData,data,pagePosition,setPagePosition }) {
   return (
     <>
-      <AddTodo setData={setData} />
-      <ListGroup data={data} setData={setData} pagePosition={pagePosition} setPagePosition={setPagePosition}/>
+      <AddTodo setInitData={setInitData} />
+      <ListGroup data={data} setInitData={setInitData} pagePosition={pagePosition} setPagePosition={setPagePosition}/>
     </>
   );
 }

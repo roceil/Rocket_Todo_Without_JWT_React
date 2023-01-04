@@ -1,10 +1,10 @@
 import delete_btn from "../img/delete_btn.svg";
-function ListItem({ content, id, finish, setData, data }) {
+function ListItem({ content, id, finish, setInitData, data }) {
   function deleteItem() {
     const result = data.filter((item) => {
       return item.id !== id;
     });
-    setData(result);
+    setInitData(result);
   }
   function changeData() {
     const changeData = data.map((item) => {
@@ -13,7 +13,7 @@ function ListItem({ content, id, finish, setData, data }) {
       }
       return item;
     });
-    setData(changeData)
+    setInitData(changeData)
   }
 
   return (
